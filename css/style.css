@@ -1,0 +1,206 @@
+/*STYLE RESET START*/
+*{
+	box-sizing: border-box;
+	user-select: none;
+}
+body{
+	margin: 0;
+	color: #252e39;
+	font: 700 16px/1 "PT Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+/*STYLE RESET END*/
+
+/*Default classes start*/
+.red{
+	color: #eb5346;
+}
+.blue{
+	color: #252e39;
+}
+.red-bg{
+	background-color: #eb5346;
+}
+.blue-bg{
+	background-color: #252e39;
+}
+.title{
+	font-size: 20px;
+}
+.flex-container-sb{
+	display: flex;
+	justify-content: space-between;
+}
+.flex-container-sa{
+	display: flex;
+	justify-content: space-around;
+}
+.mb-light{
+	margin-bottom: 50px;
+}
+.mb-strong{
+	margin-bottom: 100px;
+}
+button{
+	padding: 5px 20px;	
+	color: white;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.hide{
+	display: none;
+}
+/*Default classes end*/
+
+.title-block{
+	width: 100%;	
+	text-align: center;
+	height: 90px;
+	color: white;
+	font-size: 28px;
+	border-bottom: 2px solid #252e39;
+}
+.title-block img{
+	transform: translateY(40%);
+	margin-right: 10px;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.class-block span, .calc-btn-block span{	
+	text-transform: uppercase;	
+	color: white;
+	padding: 5px 0;
+	text-align: center;	
+}
+.class-block .class-item span{
+	display: block;
+	margin: 0 auto;
+	background-color: #252e39;
+	max-width: 210px;
+}
+
+.calc-btn-block button{
+	position: relative;
+}
+.calc-btn-block button.arrow::after{
+	content: "";
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #eb5346;
+	position: absolute;
+	left: 45%;
+	bottom: -65%;
+}
+
+.calc-block .calc-item{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 800px;
+}
+.calc-block .calc-item .partials{
+	min-height: 100px;
+    padding-bottom: 25px;
+}
+.calc-block .calc-item .partials div{	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 12px;
+	font-weight: 400;
+}
+.calc-block .calc-item .partials div img{
+	align-self: center;
+}
+.calc-block .calc-item .partials div span{
+	text-align: center;
+	max-width: 70px;
+}
+.calc-block .calc-item .partials div + div{
+	margin-left: 30px;
+}
+.calc-block aside{	
+	min-width: 200px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-left: 1px solid #252e39;
+	margin-right: 100px;
+}
+.calc-block aside ul li{
+	padding: 9px 15px;
+	position: relative;	
+}
+.calc-block aside ul li:hover, .active{
+	background-color: #252e39;
+	color: white;	
+}
+.calc-block aside ul li:hover::before, .active::before{
+	position: absolute;
+	content: "";
+	display: inline-block;
+    border: 17px solid transparent;
+    border-right: 20px solid #252e39;
+    left: -37px;
+    top: 0;    
+}
+.calc-block aside .sub-menu li{
+	padding-left: 35px;
+	padding-right: 0;
+}
+.calc-block aside .sub-link:hover::after{
+	position: absolute;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+    right: 30px;
+    top: 8px;
+    transform: rotate(45deg);
+}
+.calc-block aside .sub-link.rotate:hover::after{
+	transform: rotate(225deg);
+	top: 14px;
+}
+.calc-block aside .sub-menu li:hover{
+	background-color: #eb5346;	
+}
+.calc-block aside .sub-menu li:hover::before{
+	border-right: 20px solid #eb5346;
+}
+.calc-block .calc-item .price-block .price-text .coast{
+	display: inline-block;
+	border-top: 1px solid #252e39;
+	color: #252e39;
+	padding-top: 2px;
+}
+.calc-block .calc-item .price-block .price-text .coast span + span{
+	margin-left: 30px;
+}
+.calc-block .calc-item .price-block .price-text button{
+	margin-left: 30px;
+}
