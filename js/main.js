@@ -48,7 +48,7 @@ $('.main-menu').find('li').click(function(e) {
 });
 
 // Hover main
-$('aside').find('.main-menu').hover(function(){
+$('.main-menu').find('li').hover(function(){
 	switch($(this).index()) {
 		case 0: $('.main-img').attr('src','img/'+path+'/минимальный.jpg'); break
 		case 1: $('.main-img').attr('src','img/'+path+'/стандарт.jpg'); break
